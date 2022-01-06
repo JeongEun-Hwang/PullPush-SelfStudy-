@@ -1,0 +1,7 @@
+Clone 과정
+====================================================
+정의 : Github 상의 repository를 옮기고자 하는 파일에 들여오는 것
+
+#, Code
+1. git clone 'URL'  : 새로운 폴더를 만들면서 clone
+2. git clone 'URL' .  : 기존 현재 폴더에 그대로 clone
