@@ -1,0 +1,100 @@
+pull 과정 요약 : git init -> git remote add origin <url> -> git pull origin master
+========================================================================================
+
+l_u3_JE@DESKTOP-Q1N71UP MINGW64 ~/Desktop/TIL2 (master)
+$ git remote add origin https://github.com/JeongEun-Hwang/TIL2.git
+error: remote origin already exists.
+
+l_u3_JE@DESKTOP-Q1N71UP MINGW64 ~/Desktop/TIL2 (master)
+$ git push origin master
+To https://github.com/JeongEun-Hwang/TIL2.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/JeongEun-Hwang/TIL2.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+l_u3_JE@DESKTOP-Q1N71UP MINGW64 ~/Desktop/TIL2 (master)
+$ git push origin master
+To https://github.com/JeongEun-Hwang/TIL2.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/JeongEun-Hwang/TIL2.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+l_u3_JE@DESKTOP-Q1N71UP MINGW64 ~/Desktop/TIL2 (master)
+$ ls
+README.md  TIL2.py  TodaySelfStudy.md
+
+l_u3_JE@DESKTOP-Q1N71UP MINGW64 ~/Desktop/TIL2 (master)
+$ git remote add origin https://github.com/JeongEun-Hwang/TIL2.git
+error: remote origin already exists.
+
+l_u3_JE@DESKTOP-Q1N71UP MINGW64 ~/Desktop/TIL2 (master)
+$ git push origin master
+To https://github.com/JeongEun-Hwang/TIL2.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/JeongEun-Hwang/TIL2.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+l_u3_JE@DESKTOP-Q1N71UP MINGW64 ~/Desktop/TIL2 (master)
+$ git push origin master
+To https://github.com/JeongEun-Hwang/TIL2.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/JeongEun-Hwang/TIL2.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+l_u3_JE@DESKTOP-Q1N71UP MINGW64 ~/Desktop/TIL2 (master)
+$ git pull
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 5 (delta 0), reused 5 (delta 0), pack-reused 0
+Unpacking objects: 100% (5/5), 377 bytes | 10.00 KiB/s, done.
+From https://github.com/JeongEun-Hwang/TIL2
+   09660bf..2ab98f5  master     -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+l_u3_JE@DESKTOP-Q1N71UP MINGW64 ~/Desktop/TIL2 (master)
+$ ls
+README.md  TIL2.py  TodaySelfStudy.md
+
+l_u3_JE@DESKTOP-Q1N71UP MINGW64 ~/Desktop/TIL2 (master)
+$ git pull origin master
+From https://github.com/JeongEun-Hwang/TIL2
+ * branch            master     -> FETCH_HEAD
+Updating 09660bf..2ab98f5
+Fast-forward
+ a.txt | 1 +
+ b.txt | 1 +
+ c.txt | 0
+ 3 files changed, 2 insertions(+)
+ create mode 100644 a.txt
+ create mode 100644 b.txt
+ create mode 100644 c.txt
+
+l_u3_JE@DESKTOP-Q1N71UP MINGW64 ~/Desktop/TIL2 (master)
+$ ls
+README.md  TIL2.py  TodaySelfStudy.md  a.txt  b.txt  c.txt
